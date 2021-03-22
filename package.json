@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +19,6 @@
     "url": "https://github.com/RomainSeite/repo/issues"
   },
   "homepage": "https://github.com/RomainSeite/repo#readme",
+  "devDependencies": {},
   "description": ""
 }
