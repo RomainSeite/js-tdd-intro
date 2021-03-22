@@ -1,7 +1,6 @@
 {
   "name": "wilder",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha \"Error: no test specified\" && exit 1"
@@ -11,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "mocha": "^8.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainSeite/repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RomainSeite/repo/issues"
+  },
+  "homepage": "https://github.com/RomainSeite/repo#readme",
+  "description": ""
 }
