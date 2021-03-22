@@ -5,23 +5,39 @@ const assert = require('assert');
 const capitalizeFirst = require('../capitalizeFirst');
 
 
-// Check that capitalizeFirst is a function
+// give the test suite a label using describe
 
-assert.strictEqual(typeof capitalizeFirst, 'function');
+describe('capitalizeFirst', () => {
 
-// Check that capitalizeFirst accepts one argument
+  // give the test a label using it
 
-assert.strictEqual(capitalizeFirst.length, 1);
+  it('is a function accepting one argument', () => {
 
-// Check that capitalizeFirst transforms javaScript correctly
+    assert.strictEqual(typeof capitalizeFirst, 'function');
 
-assert.strictEqual(capitalizeFirst('javaScript'), 'JavaScript');
+    assert.strictEqual(capitalizeFirst.length, 1);
 
-// Check that it works for a 1-character string
+  });
 
-assert.strictEqual(capitalizeFirst('z'), 'Z');
 
-// Check that it works for an empty string
+  it('transforms javaScript correctly', () => {
 
-assert.strictEqual(capitalizeFirst(''), '');
+    assert.strictEqual(capitalizeFirst('javaScript'), 'JavaScript');
 
+  });
+
+
+  it('works with a 1-character string', () => {
+
+    assert.strictEqual(capitalizeFirst('z'), 'Z');
+
+  });
+
+
+  it('works with an empty string', () => {
+
+    assert.strictEqual(capitalizeFirst(''), '');
+
+  });
+
+});
