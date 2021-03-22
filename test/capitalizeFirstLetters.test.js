@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 
-const capitalizeFirst = require('../capitalizeFirst');
+const capitalizeFirst = require('../capitalizeFirstLetters');
 
 
 // give the test suite a label using describe
