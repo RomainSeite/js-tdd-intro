@@ -1,32 +1,14 @@
-    // capitalizeFirst.js
+// capitalizeFirst.js
 
-const assert = require('assert');
+function capitalizeFirst(input) {
 
+  return input.length > 0
 
-// WRITE THE ACTUAL FUNCTION HERE
-function capitalizeFirst(string) {
-  let words = new Array();
-  string.split` `.forEach(word =>
-    word.length > 0?
-    words.push(word[0].toUpperCase() + word.slice(1))
-    :words.push(''))
-  return words.join(' ');
+    ? input[0].toUpperCase() + input.slice(1)
+
+    : '';
+
 }
 
 
-// Check that it works with several words
-
-assert.strictEqual(capitalizeFirst("i am learning TDD"), "I Am Learning TDD")
-
-// Check that it works with one word
-
-assert.strictEqual(capitalizeFirst("javascript"), 'Javascript');
-
-// Check that it works with one letter
-
-assert.strictEqual(capitalizeFirst("m"), 'M');
-
-// Check that it works with an empty string
-
-assert.strictEqual(capitalizeFirst(" "), " ");
-
+module.exports = capitalizeFirst;
